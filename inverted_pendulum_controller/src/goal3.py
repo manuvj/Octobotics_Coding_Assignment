@@ -1,6 +1,5 @@
-#!/usr/bin/env python3
-
 # neccessary packages
+
 import rospy
 import rospkg
 import sys

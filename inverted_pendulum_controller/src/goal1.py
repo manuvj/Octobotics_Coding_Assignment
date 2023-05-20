@@ -1,5 +1,4 @@
-#! /usr/bin/env python3
-
+# neccessary packages
 import rospy
 import rospkg
 import sys
@@ -9,7 +8,7 @@ rospy.init_node('goal1')
 rospy.wait_for_service('/inverted_pendulum/set_params')
 set_params_service = rospy.ServiceProxy('/inverted_pendulum/set_params', SetParams)
 set_params_object = SetParamsRequest()
-set_params_object.pendulum_mass = 2.0
+set_params_object.pendulum_mass = 2.0 #set parameters
 set_params_object.pendulum_length = 300
 set_params_object.cart_mass = 0.5
 set_params_object.theta_0 = 0.0

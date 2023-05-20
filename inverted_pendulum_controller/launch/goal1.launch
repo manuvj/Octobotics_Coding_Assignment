@@ -1,0 +1,4 @@
+<launch>
+<node pkg="inverted_pendulum_controller" type="goal1.py" name="goal1" />
+<include file="$(find inverted_pendulum_sim)/launch/inverted_pendulum_sim.launch" />
+</launch>
